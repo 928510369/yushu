@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block container %}
+    {{ super() }}
+     ascscs
+
+    {{ data.name.sc|default('未名') }}
+    {{ data.age |add1() }}
+    {% set name=get_flashed_messages() %}
+    {{ name }}
+
+{% endblock %}
